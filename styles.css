@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.shoe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Space between the shoe items */
+}
+
+.shoe {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 15px;
+    width: 250px; /* Fixed width for each shoe */
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Light background for each item */
+    border-radius: 8px; /* Rounded corners for the shoe boxes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shoe:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for hover effect */
+}
+
+.shoe img {
+    width: 100%; /* Ensure image covers the whole width of the box */
+    height: 200px; /* Fixed height for the images */
+    object-fit: contain; /* Maintain aspect ratio and fit within the box */
+    border-radius: 5px; /* Round the corners of the images */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333; /* Darker text for better visibility */
+}
+
+p {
+    font-size: 16px;
+    color: #666; /* Lighter color for price text */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
